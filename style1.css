@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.calculator{
+    background-color: black;
+    background-image: radial-gradient(#580358 ,#04092b);
+    padding:5px;
+    border-radius: 10px;
+}
+.buttons{
+    margin: 15px;
+}
+.screen{
+    justify-content: right;
+    text-align: right;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(250, 220, 220);
+}
+h1{
+    margin: 0%;
+    padding-top: 10px;
+    margin-right: 20px ; 
+    font-size: 50px;
+}
+p{
+    margin: 0%;
+    padding: 0%;
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 10px;
+}
+button{
+    width: 70px;
+    height: 40px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 50%);
+    /* border-style: groove; */
+    cursor: pointer;
+}
+button:active{
+    position: relative;
+    top: 2px;
+}
+button:focus{
+    outline: none;
+}
+button:hover{
+    box-shadow:5px 5px 5px rgb(0, 0, 0);
+    color: white;
+}
+.equal1{
+    position: absolute;
+    height: 90px !important;
+    margin-left: 9px !important;
+    position: fixed;
+}
+.equal2{
+    position: absolute;
+    width: 155px !important ;
+    margin-left: 10px !important;
+}
+
+.gray , .number, .signs, .equal{
+  transition: 0.3s;
+  background-size: 200% auto;
+}
+.gray:hover, .number:hover , .signs:hover, .equal:hover{
+    background-position: right center !important;
+}   
+.gray{
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+.number{
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+
+}
+.signs{
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+
+}
+.equal{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    transition: none !important;
+    pointer-events: none;
+
+}
+
+
+
+
